@@ -1,0 +1,14 @@
+syntax = "proto3";
+package tejiriaustin.helloweb3.helloweb3;
+
+import "gogoproto/gogo.proto";
+import "helloweb3/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/tejiriaustin/hello-web3/x/helloweb3/types";
+
+// GenesisState defines the helloweb3 module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}

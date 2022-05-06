@@ -1,0 +1,12 @@
+syntax = "proto3";
+package tejiriaustin.helloweb3.helloweb3;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/tejiriaustin/hello-web3/x/helloweb3/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}
